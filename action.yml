@@ -1,0 +1,9 @@
+name: 'File diff detection'
+description: 'File diff detection'
+author: 'Shizuma5'
+inputs:
+  github-token:
+    description: 'GITHUB_TOKEN'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
