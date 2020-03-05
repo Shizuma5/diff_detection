@@ -510,6 +510,7 @@ const run = async () => {
     const octokit = new github.GitHub(token);
 
     const changeFiles = await getPullRequestChangedFiles(octokit, pullRequestNumber);
+    print(changeFiles);
   } catch (error) {
     core.error(error);
     core.setFailed(error.message);
